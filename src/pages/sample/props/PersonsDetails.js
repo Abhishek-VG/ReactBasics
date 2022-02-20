@@ -18,7 +18,7 @@ const PersonDetails = () => {
   // logics
   return (
     <div className="container mt-3">
-      {[people].map((data) => {
+      {people.map((data) => {
         return (
           <Person
             name={data.name}
