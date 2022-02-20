@@ -1,13 +1,14 @@
 import React from "react";
 
 const Person = (props) => {
-  const { name, age } = props;
+  const { name, email, gender } = props;
   // logics
   return (
     <div>
-      <span>
-        I am a Person, from {name} {age}
-      </span>
+      <div>
+        I am a Person, from {name} | email = {email} | gender ={gender}
+      </div>
+      <br/> 
     </div>
   );
 };
