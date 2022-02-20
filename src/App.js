@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+// import Person from './pages/sample/props/Person';
+import CounterParent from "./pages/sample/state/CounterParent";
+import UserName from "./pages/sample/context/problem/UserNamePass";
+import EffectParent from "./pages/sample/useeffect/EffectParent";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <CounterParent /> */}
+      {/* <UserName /> */}
+      <EffectParent />
     </div>
   );
 }
 
 export default App;
+
+{
+  /* <Person name={"Jyothi"} age="21"/>
+<Person name={"ABVG"} age="22"/>
+<Person name={"Genny"} age="23"/> */
+}
