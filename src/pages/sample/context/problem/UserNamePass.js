@@ -3,6 +3,7 @@ import React from "react";
 const UserName = () => {
   return (
     <>
+      <span>Main comp 1</span>
       <Component2 user={"Jerry"} />
     </>
   );
@@ -11,7 +12,7 @@ const UserName = () => {
 const Component2 = ({ user }) => {
   return (
     <>
-      <h1>Component 2</h1>
+      <h2>Component 2</h2>
       <Component3 user={user} />
     </>
   );
@@ -20,7 +21,7 @@ const Component2 = ({ user }) => {
 const Component3 = ({ user }) => {
   return (
     <>
-      <h1>Component 3</h1>
+      <h2>Component  3</h2>
       <Component4 user={user} />
     </>
   );
@@ -29,7 +30,7 @@ const Component3 = ({ user }) => {
 const Component4 = ({ user }) => {
   return (
     <>
-      <h1>Component 4</h1>
+      <h2>Component 4</h2>
       <Component5 user={user} />
     </>
   );
@@ -38,8 +39,8 @@ const Component4 = ({ user }) => {
 const Component5 = ({ user }) => {
   return (
     <>
-      <h1>Component 5</h1>
-      <h2>{`Hello ${user} again!`}</h2>
+      <h2>Component 5</h2>
+      <h1>{`Hello ${user} again!`}</h1>
     </>
   );
 };

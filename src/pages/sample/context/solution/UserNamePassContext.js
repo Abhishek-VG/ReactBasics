@@ -4,7 +4,7 @@ const UserNameContext = React.createContext();
 
 const UserNameCont = () => {
   return (
-    <UserNameContext.Provider value="Jerry">
+    <UserNameContext.Provider value={"Jerima"}>
       <Component2 />
     </UserNameContext.Provider>
   );
@@ -20,9 +20,10 @@ const Component2 = () => {
 };
 
 const Component3 = () => {
+  const user = React.useContext(UserNameContext);
   return (
     <>
-      <h1>Component 3</h1>
+      <h1>Component 3, {user}</h1>
       <Component4 />
     </>
   );

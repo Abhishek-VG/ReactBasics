@@ -1,8 +1,8 @@
 import "./App.css";
 // import Person from './pages/sample/props/Person';
-import CounterParent from "./pages/sample/state/CounterParent";
-import UserName from "./pages/sample/context/problem/UserNamePass";
-import EffectParent from "./pages/sample/useeffect/EffectParent";
+// import CounterParent from "./pages/sample/state/CounterParent";
+// import UserName from "./pages/sample/context/problem/UserNamePass";
+// import EffectParent from "./pages/sample/useeffect/EffectParent";
 import UserNameCont from "./pages/sample/context/solution/UserNamePassContext";
 
 function App() {
@@ -10,8 +10,8 @@ function App() {
     <div className="App">
       {/* <CounterParent /> */}
       {/* <UserName /> */}
-      {/* <UserNameCont /> */}
-      <EffectParent />
+      <UserNameCont />
+      {/* <EffectParent /> */}
     </div>
   );
 }
