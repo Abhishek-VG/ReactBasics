@@ -2,7 +2,7 @@ import React from "react";
 
 const UserNameContext = React.createContext();
 
-const UserName = () => {
+const UserNameCont = () => {
   return (
     <UserNameContext.Provider value="Jerry">
       <Component2 />
@@ -47,4 +47,4 @@ const Component5 = () => {
   );
 };
 
-export default UserName;
+export default UserNameCont;
