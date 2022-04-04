@@ -5,12 +5,12 @@ class Parent extends React.Component {
     super(props);
     console.log("PARENT-CONSTRUCTOR");
     this.state = {
-      show: true,
+      show: true, // const [show, setShow] = React.useState(true)
       count: 0,
       theme: {
         color: "black",
         backgroundColor: "white",
-        type: "dark",
+        type: "light",
       },
     };
     this.toggleChildView = this.toggleChildView.bind(this);
@@ -40,21 +40,22 @@ class Parent extends React.Component {
 
   toggleTheme() {
     let theme;
-    if (this.state.theme.type === "dark") {
+    if (this.state.theme.type === "light") {
       theme = {
         color: "white",
         backgroundColor: "black",
-        type: "light",
+        type: "dark",
       };
     } else {
       theme = {
         color: "black",
         backgroundColor: "white",
-        type: "dark",
+        type: "light",
       };
     }
-    this.setState({ theme });
+    this.setState({ theme: theme });
   }
+
   render() {
     console.log("PARENT-RENDER", this.state);
     return (

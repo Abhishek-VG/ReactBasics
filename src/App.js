@@ -9,6 +9,8 @@ import React from "react";
 import ClassDemo from "./pages/sample/class/DemoClass";
 // life cycles explained in below
 import { Parent } from "./pages/sample/class/classLifeCycles/Parent";
+// hoc
+import HOC from './pages/sample/class/HOC/HOC';
 function App() {
   return (
     <div className="App">
@@ -18,7 +20,8 @@ function App() {
       {/* <EffectParent /> */}
       {/* <PersonDetails /> */}
       {/* <ClassDemo /> */}
-      <Parent />
+      {/* <Parent /> */}
+      <HOC />
     </div>
   );
 }

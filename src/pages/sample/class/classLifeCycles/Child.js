@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export default class Child extends React.Component {
+export default class Child extends React.PureComponent {
   constructor(props) {
     super(props);
     console.log("CHILD-CONSTRUCTOR");
@@ -12,12 +12,31 @@ export default class Child extends React.Component {
     console.log("CHILD-COMPONENT DID MOUNT");
   }
 
-  shouldComponentUpdate() {
-    console.log("CHILD-SHOULD COMPONENT UPDATE");
-    // decides whether this component to be rendered or not
-    // if returns false, it wont re-render
-    return true;
-  }
+  // shouldComponentUpdate(nextProps) {
+  //   console.log("CHILD-SHOULD COMPONENT UPDATE");
+  //   // decides whether this component to be rendered or not
+  //   // if returns false, it wont re-render
+  //   // after should comp update 
+  //   // nextProps mergers with this.props
+  //   console.log(nextProps, this.props);
+  //   if(nextProps.count % 2 ===0) {
+  //     return true
+  //   } else {
+  //     return false;
+  //   }
+  // }
+
+  // shouldComponentUpdate(nextProps) {
+  //   // if in parent, a rerender is caused and that doesnt chnage any prop value 
+  //   // to child, then child re render is useless
+  //   console.log("CHILD-SHOULD COMPONENT UPDATE");
+  //     console.log(nextProps, this.props);
+  // if(nextProps.count === this.props.count) {
+  //     return false
+  //   } else {
+  //     return true;
+  //   }
+  //  }
 
   componentDidUpdate() {
     console.log("CHILD-COMPONENT DID UPDATE");
@@ -43,3 +62,4 @@ export default class Child extends React.Component {
   }
 }
 
+// pure component implements should component internally (shallow comapriosion)
